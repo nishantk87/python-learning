@@ -16,3 +16,4 @@ Import Dataset
 """
 
 dataset = pd.read_csv("/Users/nishantkhanna/Desktop/Machine Learning A-Z/Part 1 - Data Preprocessing/Data.csv")
+X = dataset.iloc[:,:-1].values
