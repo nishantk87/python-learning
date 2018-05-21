@@ -36,3 +36,9 @@ X = oneHotEncoder.fit_transform(X).toarray()
 
 labelEncoder_Y = LabelEncoder()
 y = labelEncoder_Y.fit_transform(y)
+
+#Splitting data to test and training
+
+from sklearn.cross_validation import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
